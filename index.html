@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html"> Home </a>
         </li>
@@ -15,27 +16,45 @@
         </li>
     </ul>
 <body>
-    <h1>Sobre mim, Laura</h1> 
+    <hr>
+    <h1 class="center">Prazer, meu nome é Laura!</h1> 
 
-    <p>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate reiciendis amet nemo recusandae nulla tempore non quos! Recusandae vero iure voluptate dignissimos cupiditate totam libero? Amet quis magni quae.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, sapiente assumenda officia, quaerat ducimus amet vel doloremque maxime, minima aperiam et quasi! Repudiandae exercitationem hic incidunt error autem ipsum laboriosam!
-    </p>
-    <p>  
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio labore temporibus porro explicabo praesentium soluta ullam, quidem provident voluptatum iure sunt beatae vitae, a pariatur exercitationem modi aliquid hic nam?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum commodi iusto perspiciatis repellat fugit corrupti at ut, doloribus in eius cumque dolore officia fuga esse, aspernatur quidem ad voluptatum.
-    </p>
-
-    <img src="assets/img/foto laura.jpg" alt="Foto da criadora do conteúdo">
-
-    <h2>Meu vídeo favorito:</h2>
-    <iframe width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/Sw8P351cjJo" 
-    title="YouTube video player" 
-    frameborder="2" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-    </iframe>
+    <div class="container perfil separacao margemlateral50">
+        <div>
+            <img class="border50 larguraltura padding30 foto" src="assets/img/1652322548376.jpg" alt="Foto da criadora do conteúdo">
+        </div>
+        <div class="padding30 margemp marcatexto">
+            <p class="textojustificado">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate reiciendis amet nemo recusandae nulla tempore non quos! Recusandae vero iure voluptate dignissimos cupiditate totam libero? Amet quis magni quae.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, sapiente assumenda officia, quaerat ducimus amet vel doloremque maxime, minima aperiam et quasi! Repudiandae exercitationem hic incidunt error autem ipsum laboriosam!
+             </p>
+             <p class="textojustificado">  
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio labore temporibus porro explicabo praesentium soluta ullam, quidem provident voluptatum iure sunt beatae vitae, a pariatur exercitationem modi aliquid hic nam?
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum commodi iusto perspiciatis repellat fugit corrupti at ut, doloribus in eius cumque dolore officia fuga esse, aspernatur quidem ad voluptatum.
+             </p>
+        </div>
+    </div>
+    <hr>
+    <h2 class="center">Meu vídeo favorito:</h2>
+    <div class="container margem50">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sw8P351cjJo" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+    </div>
+    <hr> <!--Separação de sessão-->
+    <footer>
+        <div class="container">
+            <a href="https://github.com/lauradelafuente">
+                <img class="tm-redes padding30" src="assets/img/github (1).png" alt="Logo GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/laura-delafuente/">
+                <img class="tm-redes padding30" src="assets/img/linkedin.png" alt="Logo Linkedin">
+            </a>
+            <a href="https://instagram.com/lau.rinha_">
+                <img class="tm-redes padding30" src="assets/img/instagram.png" alt="Logo Instagram">
+            </a>
+        </div>
+        <p class="center">
+            Todos os direiros reservados para Laura De La Fuente &copy
+        </p>
+    </footer>
 </body>
 </html>
