@@ -21,7 +21,8 @@ function validaNome() {
     let txtNome = document.querySelector("#txtNome")
     if (nome.value.length < 3) {
         txtNome.innerHTML = "Nome Inválido"
-        txtNome.style.color = "red"   
+        txtNome.style.color = "red" 
+        nomeOk = false
     } else {
         txtNome.innerHTML = "Nome Válido"
         txtNome.style.color = "green"
@@ -34,6 +35,7 @@ function validaEmail() {
     if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) { //se tem,  retorna 1, se não existe -1
         txtEmail.innerHTML = "Email Inválido"
         txtEmail.style.color = "red"
+        emailOk = false
     } else {
         txtEmail.innerHTML = "Email Válido"
         txtEmail.style.color = "green"
@@ -47,6 +49,7 @@ function validaAssunto() {
         txtAssunto.innerHTML = "Texto muito grande, utitlize no máximo 100 caracteres"
         txtAssunto.style.color = "red"
         txtAssunto.style.display = "block"
+        assuntoOk = false
    } else {
         txtAssunto.style.display = "none" //display é como vai aparecer na tela, none faz com que não apareça nada
         assuntoOk = true 
@@ -62,8 +65,8 @@ function enviar() {
 }
 
 function mapaZoom() {
-    mapa.style.width = "800px"
-    mapa.style.height = "600px"
+    mapa.style.width = "500px"
+    mapa.style.height = "350px"
 }
 
 function mapaNormal() {
